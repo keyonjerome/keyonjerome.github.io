@@ -12,6 +12,7 @@ import { PortfolioIntroComponent } from './portfolio-intro/portfolio-intro.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {RouterModule} from '@angular/router';
+import { SpartanRoboticsComponent } from './spartan-robotics/spartan-robotics.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {RouterModule} from '@angular/router';
     HomeComponent,
     NavbarComponent,
     PortfolioPageComponent,
-    PortfolioIntroComponent
+    PortfolioIntroComponent,
+    SpartanRoboticsComponent
   ],
   imports: [
     BrowserModule,

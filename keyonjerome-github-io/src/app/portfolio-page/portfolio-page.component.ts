@@ -27,17 +27,14 @@ import {
     trigger('openClose', [
       // ...
       state('open', style({
-        // height: '200px',
-        opacity: 1,
-        backgroundColor: 'yellow'
+   
+        background: '#F7F7F9'
       })),
       state('closed', style({
-        // height: '100px',
-        opacity: 0.5,
-        backgroundColor: 'green'
+        background:'#11322A',
       })),
       transition('open => closed', [
-        animate('1s')
+        animate('2s')
       ]),
       transition('closed => open', [
         animate('0.5s')
@@ -50,26 +47,11 @@ import {
 
 export class PortfolioPageComponent implements OnInit {
   isOpen = true;
-  scrollNumbers = [1000, 2000, 3000];
+  scrollNumbers = [400, 2000, 3000];
   scrollTop = document.documentElement.scrollTop;
   scrollTimeout: number = 1000;
   scrolling: boolean = false;
-   firstSlideAnimation =    animation(   [state('open', style({
-    height: '200px',
-    opacity: 1,
-    backgroundColor: 'yellow'
-  })),
-  state('closed', style({
-    height: '100px',
-    opacity: 0.5,
-    backgroundColor: 'green'
-  })),
-  transition('open => closed', [
-    animate('1s')
-  ]),
-  transition('closed => open', [
-    animate('0.5s')
-  ])]);
+   
 
   constructor(private myscroll: ScrollDispatcher) {
 

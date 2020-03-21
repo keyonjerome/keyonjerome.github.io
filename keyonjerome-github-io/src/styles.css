@@ -5,3 +5,8 @@
 .roboto {
     font-family:'Roboto';
 }
+
+.introcontainer {
+    height:100vh !important;
+    overflow:hidden;
+  }
