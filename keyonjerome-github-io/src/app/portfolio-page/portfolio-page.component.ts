@@ -31,10 +31,11 @@ import {
         background: '#F7F7F9'
       })),
       state('closed', style({
-        background:'#11322A',
+        // background:'url("../../assets/spartanroboticsswerve.svg")'
+        background:'#11322A'
       })),
       transition('open => closed', [
-        animate('2s')
+        animate('0.5s')
       ]),
       transition('closed => open', [
         animate('0.5s')
