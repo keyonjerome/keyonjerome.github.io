@@ -1,0 +1,8 @@
+<app-navbar>
+
+</app-navbar>
+<div class="container-fluid" [@openClose]="scrollIsWithinFirstSlide()? 'open' :'closed'">
+    <p>portfolio-page works!</p>
+    <button mat-raised-button (click)="toggle()" [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">Test</button>
+  </div>
+
