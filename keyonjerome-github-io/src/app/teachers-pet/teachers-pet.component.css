@@ -1,0 +1,8 @@
+.introcontainer {
+    background:url('../../assets/teacherspetswerve.svg') !important;
+    background-size:cover !important;
+}
+
+.paragraph-size {
+    font-size: 1.1em !important;
+}

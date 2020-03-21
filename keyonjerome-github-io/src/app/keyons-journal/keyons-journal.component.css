@@ -1,16 +1,5 @@
-.carouselCol {
-    padding-left: 0;
-    margin-left:-1em;
-}
-
-.border {
-    border: 0.5em solid white !important;
-} 
-:host {
-   
-}
 .introcontainer {
-    background:url('../../assets/spartanroboticsswerve.svg') !important;
+    background:url('../../assets/keyonsjournalswerve.svg') !important;
     background-size:cover !important;
 }
 

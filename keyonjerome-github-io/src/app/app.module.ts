@@ -13,6 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {RouterModule} from '@angular/router';
 import { SpartanRoboticsComponent } from './spartan-robotics/spartan-robotics.component';
+import { TeachersPetComponent } from './teachers-pet/teachers-pet.component';
+import { FRCVisionComponent } from './frcvision/frcvision.component';
+import { KeyonsJournalComponent } from './keyons-journal/keyons-journal.component';
+import { PortfolioOutroComponent } from './portfolio-outro/portfolio-outro.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { SpartanRoboticsComponent } from './spartan-robotics/spartan-robotics.co
     NavbarComponent,
     PortfolioPageComponent,
     PortfolioIntroComponent,
-    SpartanRoboticsComponent
+    SpartanRoboticsComponent,
+    TeachersPetComponent,
+    FRCVisionComponent,
+    KeyonsJournalComponent,
+    PortfolioOutroComponent
   ],
   imports: [
     BrowserModule,

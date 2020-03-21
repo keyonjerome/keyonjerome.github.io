@@ -22,10 +22,14 @@
     display: inline-block;
     padding: 1.5em;
   }
-
+/* 
 .realign {
-    margin-top:-5vh !important;
+    margin-top:10vh !important;
+  } */
+
+
+  @media only screen and (max-width: 600px) {
+    .display-3 {
+     font-size:2.5em !important;
+    }
   }
-
-
-  
