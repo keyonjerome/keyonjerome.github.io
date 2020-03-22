@@ -1,6 +1,8 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  Input,
+  EventEmitter
 } from '@angular/core';
 import {
   trigger,
@@ -19,6 +21,7 @@ import {
 import {
   HostListener
 } from '@angular/core';
+
 
 
 @Component({
@@ -53,6 +56,7 @@ export class PortfolioPageComponent implements OnInit {
   scrollTimeout: number = 1000;
   scrolling: boolean = false;
    
+  @Input() scrollEvent = new EventEmitter();
 
   constructor(private myscroll: ScrollDispatcher) {
 
@@ -83,6 +87,9 @@ export class PortfolioPageComponent implements OnInit {
     if (this.scrollTop < this.scrollNumbers[0]) {
       return true;
     } else return false;
+  }
+  onScrollButton(e:Event) {
+
   }
 
 
