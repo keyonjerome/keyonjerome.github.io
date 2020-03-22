@@ -18,6 +18,7 @@ import { FRCVisionComponent } from './frcvision/frcvision.component';
 import { KeyonsJournalComponent } from './keyons-journal/keyons-journal.component';
 import { PortfolioOutroComponent } from './portfolio-outro/portfolio-outro.component';
 import {SmoothScrollToDirective, SmoothScrollDirective} from 'ng2-smooth-scroll';
+import { RBCApplicationComponent } from './rbcapplication/rbcapplication.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import {SmoothScrollToDirective, SmoothScrollDirective} from 'ng2-smooth-scroll'
     TeachersPetComponent,
     FRCVisionComponent,
     KeyonsJournalComponent,
-    PortfolioOutroComponent
+    PortfolioOutroComponent,
+    RBCApplicationComponent
   ],
   imports: [
     BrowserModule,
