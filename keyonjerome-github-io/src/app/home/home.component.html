@@ -9,19 +9,47 @@
     </div> <!-- COL -->
   </div> <!-- ROW -->
 
-  <div class="row roboto waves">
-      <div class="offset-1 text-white col-sm-7 mt-5">
+  <div class="row roboto ">
+      <div class="offset-1 text-white col-sm-7 mt-5 col-12 mx-auto text-center">
           <h1 class="font-weight-bold display-3">Hi, I'm Keyon.</h1>
           <h2 class="text-white-50 mb-sm-4 ">I’m a student, technology enthusiast, and professional dad-joke maker.</h2>
           <h4 class="text-white-50 font-italic ">“How do you get a baby astronaut to go to sleep? You... rocket”</h4>
           <br class="mt-5">
-          <div class="darkbutton pt-2">
-          <a mat-raised-button class="mx-1 buttoneffect" >Portfolio</a>
-          <a mat-raised-button class="mx-1 buttoneffect">Resume</a>
-          <a mat-raised-button class="mx-1 buttoneffect">Contact Me</a>
+          <div class="darkbutton pt-2 ">
+          <a mat-raised-button class="mx-1 buttoneffect" routerLink="/portfolio">Portfolio</a>
+          <a mat-raised-button class="mx-1 buttoneffect" >Resume</a>
+          <!-- <a mat-raised-button class="mx-1 buttoneffect">Contact Me</a> -->
+        </div>
+          <br>
+          <div class="buttoneffect text-white mx-sm-3 d-inline-flex align-items-center justify-content-center ">
+            <a href="https://github.com/keyonjerome">
+              <fa-icon class=" fa-lg " [icon]="faGithub"></fa-icon>
+            </a>
+            <a href="https://github.com/keyonjerome">
+              <h3 class=" ml-2 text-white mb-0">keyonjerome</h3>
+            </a>
+
+          </div>
+          
+          <div class="buttoneffect text-white mx-sm-3 d-inline-flex align-items-center justify-content-center ">
+            <a href="mailto:keyonjerome@gmail.com">
+              <fa-icon class=" fa-lg " [icon]="faAt"></fa-icon>
+            </a>
+            <a href="mailto:keyonjerome@gmail.com">
+              <h3 class=" mb-0 ml-2 text-white">keyonjerome@gmail.com</h3>
+            </a>
+        </div>
+          <div class="buttoneffect text-white mx-sm-3 d-inline-flex align-items-center justify-content-center ">
+            <a href="https://linkedin.com/in/keyonjerome">
+              <fa-icon class=" fa-lg " [icon]="faLinkedinIn"></fa-icon>
+            </a>
+            <a href="https://linkedin.com/in/keyonjerome">
+              <h3 class=" mb-0 ml-2 text-white">keyonjerome</h3>
+            </a>
+        
         </div>
         </div>
-      <div class="col-sm-4 mt-5 text-center"> 
+      <div class=" d-none d-sm-block col-sm-4 mt-5 text-center"> 
           <img class=" w-75 img-thumbnail rounded-circle border border-white" src="../../assets/legorobot.jpg">
       
         <!-- Later, I'd like to make the image spin and change every few seconds.-->

@@ -2,7 +2,10 @@ import {
   Component,
   OnInit,
   Input,
-  EventEmitter
+  EventEmitter,
+  ViewChild,
+  ElementRef,
+  AfterViewInit
 } from '@angular/core';
 import {
   trigger,
@@ -22,6 +25,8 @@ import {
   HostListener
 } from '@angular/core';
 
+import {SmoothScrollDirective,SmoothScrollToDirective} from 'ng2-smooth-scroll';
+import { PortfolioIntroComponent } from '../portfolio-intro/portfolio-intro.component';
 
 
 @Component({
@@ -49,14 +54,12 @@ import {
   styleUrls: ['./portfolio-page.component.css']
 })
 
-export class PortfolioPageComponent implements OnInit {
+export class PortfolioPageComponent implements OnInit, AfterViewInit {
   isOpen = true;
   scrollNumbers = [400, 2000, 3000];
   scrollTop = document.documentElement.scrollTop;
   scrollTimeout: number = 1000;
   scrolling: boolean = false;
-   
-  @Input() scrollEvent = new EventEmitter();
 
   constructor(private myscroll: ScrollDispatcher) {
 
@@ -68,8 +71,14 @@ export class PortfolioPageComponent implements OnInit {
   ngOnInit(): void {}
   getScrollTop() {
     this.scrollTop = document.documentElement.scrollTop;
+  
     return this.scrollTop;
   }
+  ngAfterViewInit() {
+    // this.introComponent.nativeElement.
+    // console.log('Values on ngAfterViewInit():');
+    // console.log(this.portfolioIntroComponent);
+  }  
   @HostListener("window:scroll", []) onScroll() {
     console.log("Scrolling true")
     this.scrolling = true;
@@ -89,7 +98,10 @@ export class PortfolioPageComponent implements OnInit {
     } else return false;
   }
   onScrollButton(e:Event) {
-
+    const introcomp = document.getElementById('intro');
+    introcomp.scrollIntoView({behavior:'smooth'});
+      
+    // this.portfolioIntroComponent.nativeElement.scrollIntoView();
   }
 
 

@@ -17,7 +17,7 @@ import { TeachersPetComponent } from './teachers-pet/teachers-pet.component';
 import { FRCVisionComponent } from './frcvision/frcvision.component';
 import { KeyonsJournalComponent } from './keyons-journal/keyons-journal.component';
 import { PortfolioOutroComponent } from './portfolio-outro/portfolio-outro.component';
-
+import {SmoothScrollToDirective, SmoothScrollDirective} from 'ng2-smooth-scroll';
 @NgModule({
   declarations: [
     AppComponent,
