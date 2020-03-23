@@ -13,4 +13,8 @@
     overflow:hidden;
   }
 
-  
+  .buttoneffect:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }

@@ -1,0 +1,9 @@
+:host,.rbc {
+    background:url("../../assets/rbcpageswerve.svg") !important;
+    background-size:cover !important;
+    min-height:100vh !important;
+}
+
+.bluish {
+    color:#243141;
+}
