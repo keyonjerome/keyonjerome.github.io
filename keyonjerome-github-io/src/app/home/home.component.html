@@ -1,60 +1,61 @@
 <app-navbar style="z-index: 16 !important; display:block; background: #F7F7F9;">
 
 </app-navbar>
-<div class="container-fluid  home-container ">
+<div class="container-fluid  mt-5 home-container h-100">
 
-  <div class="row no-gutters">
-    <div class="col no-gutters">
+  <div class="row mt-5 roboto d-flex justify-content-center align-self-center flex-grow">
+    <div class=" d-flex flex-column bluish justify-content-center h-100   mt-xs-5 pt-xs-4 col-sm-8 col-12  ">
+      <h1 class="font-weight-bold display-3 heading-resize mt-2 mt-sm-0 align-self-start">Hi, I'm Keyon.</h1>
+      <h2 class="bluish mb-sm-4 mt-2 mt-sm-0 description-resize ">I’m a student, technology enthusiast, and professional dad-joke
+        maker.</h2>
+      <h4 class="bluish font-italic joke-resize mt-2  align-self-start">“How do you get a baby astronaut to go to sleep? You... rocket”</h4>
+      <!-- <br class="mt-5"> -->
 
-    </div> <!-- COL -->
-  </div> <!-- ROW -->
 
-  <div class="row roboto ">
-      <div class="offset-1 text-white col-sm-7 mt-5 col-12 mx-auto text-center">
-          <h1 class="font-weight-bold display-3">Hi, I'm Keyon.</h1>
-          <h2 class="text-white-50 mb-sm-4 ">I’m a student, technology enthusiast, and professional dad-joke maker.</h2>
-          <h4 class="text-white-50 font-italic ">“How do you get a baby astronaut to go to sleep? You... rocket”</h4>
-          <br class="mt-5">
-          <div class="darkbutton pt-2 ">
-          <a mat-raised-button class="mx-1 buttoneffect" routerLink="/portfolio">Portfolio</a>
-          <a mat-raised-button class="mx-1 buttoneffect" href="/assets/KJ-Tech-Resume-March-2020.pdf" target="_blank">Resume</a>
-          <!-- <a mat-raised-button class="mx-1 buttoneffect">Contact Me</a> -->
-        </div>
-          <br>
-          <div class="buttoneffect text-white mx-sm-3 d-inline-flex align-items-center justify-content-center ">
-            <a href="https://github.com/keyonjerome">
-              <fa-icon class=" fa-lg " [icon]="faGithub"></fa-icon>
-            </a>
-            <a href="https://github.com/keyonjerome">
-              <h3 class=" ml-2 text-white mb-0">keyonjerome</h3>
-            </a>
+      <div class="darkbutton mt-4 w-100">
+        <!-- <a mat-raised-button class="mx-1 buttoneffect">Contact Me</a> -->
+        <a mat-raised-button color="primary" class=" buttoneffect  btn-block" routerLink="/portfolio">Portfolio</a>
+        <a mat-raised-button color="primary" class=" buttoneffect  btn-block"
+          href="/assets/KJ-Tech-Resume-March-2020.pdf" target="_blank">Resume</a>
+      </div>
+      <br>
+      <div class="text-center">
+        <div class="buttoneffect bluish mx-sm-3 d-inline-flex align-items-center justify-content-start ">
+          <a href="https://github.com/keyonjerome">
+            <fa-icon class=" fa-lg " [icon]="faGithub"></fa-icon>
+          </a>
+          <a href="https://github.com/keyonjerome">
+            <h3 class="contacts ml-2 bluish mb-0">keyonjerome</h3>
+          </a>
 
-          </div>
-          
-          <div class="buttoneffect text-white mx-sm-3 d-inline-flex align-items-center justify-content-center ">
-            <a href="mailto:keyonjerome@gmail.com">
-              <fa-icon class=" fa-lg " [icon]="faAt"></fa-icon>
-            </a>
-            <a href="mailto:keyonjerome@gmail.com">
-              <h3 class=" mb-0 ml-2 text-white">keyonjerome@gmail.com</h3>
-            </a>
         </div>
-          <div class="buttoneffect text-white mx-sm-3 d-inline-flex align-items-center justify-content-center ">
-            <a href="https://linkedin.com/in/keyonjerome">
-              <fa-icon class=" fa-lg " [icon]="faLinkedinIn"></fa-icon>
-            </a>
-            <a href="https://linkedin.com/in/keyonjerome">
-              <h3 class=" mb-0 ml-2 text-white">keyonjerome</h3>
-            </a>
-        
+
+        <div class="buttoneffect bluish mx-sm-3 d-inline-flex align-items-center justify-content-start ">
+          <a href="mailto:keyonjerome@gmail.com">
+            <fa-icon class=" fa-lg " [icon]="faAt"></fa-icon>
+          </a>
+          <a href="mailto:keyonjerome@gmail.com">
+            <h3 class=" mb-0 ml-2 bluish contacts">keyonjerome@gmail.com</h3>
+          </a>
         </div>
+        <div class="buttoneffect bluish mx-sm-3 d-inline-flex align-items-center justify-content-start ">
+          <a href="https://linkedin.com/in/keyonjerome">
+            <fa-icon class=" fa-lg " [icon]="faLinkedinIn"></fa-icon>
+          </a>
+          <a href="https://linkedin.com/in/keyonjerome">
+            <h3 class=" mb-0 ml-2 bluish contacts">keyonjerome</h3>
+          </a>
+
         </div>
-      <div class=" d-none d-sm-block col-sm-4 mt-5 text-center"> 
-          <img class=" w-75 img-thumbnail rounded-circle border border-white" src="../../assets/legorobot.jpg">
-      
-        <!-- Later, I'd like to make the image spin and change every few seconds.-->
-        <!-- https://ng-bootstrap.github.io/#/components/carousel/examples#pause-->
-        </div>
+      </div>
+
+    </div>
+    <!-- <div class=" d-none d-sm-block col-sm-4 mt-5 text-center">  -->
+    <!-- <img class=" w-75 img-thumbnail rounded-circle border border-white" src="../../assets/legorobot.jpg"> -->
+
+    <!-- Later, I'd like to make the image spin and change every few seconds.-->
+    <!-- https://ng-bootstrap.github.io/#/components/carousel/examples#pause-->
+    <!-- </div> -->
   </div>
   <!-- <div class="waveWrapper waveAnimation">
     <div class="waveWrapperInner bgTop">

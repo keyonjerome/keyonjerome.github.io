@@ -18,3 +18,23 @@
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
+  .bluish {
+    color:#243141;
+}
+
+@media (max-width: 575.98px) { 
+
+  .heading-resize {
+    font-size:2.6em;
+  }
+  .description-resize {
+    font-size:1.3em;
+  }
+  .joke-resize {
+    font-size:0.9em;
+  }
+  .contacts {
+    font-size:1.3em;
+  }
+}
+
