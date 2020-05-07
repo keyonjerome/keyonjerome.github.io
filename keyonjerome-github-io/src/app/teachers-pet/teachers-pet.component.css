@@ -1,6 +1,7 @@
 .introcontainer {
     background:url('../../assets/teacherspetswerve.svg') !important;
     background-size:cover !important;
+    overflow-y: scroll;
 }
 
 .paragraph-size {
