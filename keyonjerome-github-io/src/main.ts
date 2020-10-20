@@ -6,6 +6,9 @@ import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
+  // Easter egg
+  window.console.log("Hey there. What're you doing, looking through the console?")
+  // Whilen production mode, wipe out all console logs in the code; a preliminary measure
   window.console.log = function(){};
 }
 
