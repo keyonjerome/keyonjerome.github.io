@@ -1,20 +1,20 @@
 <div class="container-fluid h-100  introcontainer roboto text-white">
-  <div class="row h-100 mb-5 mb-sm-auto">
+  <div class="row h-100 mb-sm-5 mb-sm-auto">
     <div class="col-12 col-sm-6 text-center pl-sm-5">
-      <div class="row  h-25 mt-3 ">
+      <div class="row  h-25 mt-sm-3 mt-0 ">
         <div class="col my-auto">
           <h1 class="display-4 font-weight-bold mt-sm-5">TEACHER'S PET</h1>
         </div>
       </div>
       <div class="row mt-sm-2">
         <div class="col my-auto">
-          <h6 class="font-italic mt-2 mb-sm-5 text-center">Built in only 36 hours at UofTHacks VI.</h6>
-          <div class="mt-5 pt-sm-5 paragraph-size">
+          <h6 class="font-italic mt-md-2 mb-md-5 text-center " >Built in only 36 hours at UofTHacks VI.</h6>
+          <div class="mt-1 pt-md-5 paragraph-size">
             <p class="paragraph-size">This project uses Azure Machine Learning to detect when hands are raised within a classroom. When a hand is detected, our co-processor, using Flask, sends a signal to our mobile app, which then vibrates the lecturer’s phone.</p>
             <p class="paragraph-size">
-                With over 200 images, we collected our dataset ourselves—and took full advantage of the Azure Machine Learning Toolkit, Flask, Google’s Flutter mobile framework, and more.</p>
-                <p class="paragraph-size">
-                  I worked on taking our Azure ML model and integrating it with our Flask server in Python. Each frame of video had to be run anew on our ML model, so I extracted that data, parsed it, and used it to predict whether there was a hand in the frame, before sending the result over to our Flutter app.</p>
+                With over 200 images, we collected our dataset ourselves—and took full advantage of the Azure Machine Learning Toolkit, Flask, and the Flutter mobile framework.</p>
+                <p class="paragraph-size" id="ml">
+                  I worked on taking our Azure ML model and integrating it with our Flask server in Python. Each frame of video had to be run anew on our ML model, so I extracted that data and used it to predict whether there was a hand in the frame, before sending the result over to our Flutter app.</p>
   
           </div>
           <a mat-raised-button class="mx-1 buttoneffect text-dark" href="https://devpost.com/software/teachers-pet" target="_blank" >View on Devpost</a>
