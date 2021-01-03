@@ -40,7 +40,7 @@ import { PortfolioIntroComponent } from '../portfolio-intro/portfolio-intro.comp
       })),
       state('closed', style({
         // background:'url("../../assets/spartanroboticsswerve.svg")'
-        background:'#11322A'
+        background:'#29367D'
       })),
       transition('open => closed', [
         animate('0.5s')

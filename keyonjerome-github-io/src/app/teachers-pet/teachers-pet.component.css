@@ -1,9 +1,15 @@
 .introcontainer {
     background:url('../../assets/teacherspetswerve.svg') !important;
     background-size:cover !important;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .paragraph-size {
     font-size: 1.1em !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .introcontainer {
+        overflow-y: scroll;
+    }
+  }

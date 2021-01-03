@@ -1,0 +1,32 @@
+.carouselCol {
+    padding-left: 0;
+    margin-left:-1em;
+}
+
+.border {
+    border: 0.5em solid white !important;
+} 
+:host {
+   
+}
+.introcontainer {
+    background:url('../../assets/spartanroboticsswerve.svg') !important;
+    background-size:cover !important;
+}
+
+.paragraph-size {
+    font-size: 1.1em !important;
+}
+.link:hover {
+    transform: translateY(-0.25rem) !important;
+    transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .paragraph-size {
+     font-size:1em !important;
+    }
+    .livelaunch {
+        font-size:2.2em;
+    }
+  }
